@@ -3,5 +3,6 @@
 ##### Repositori ini adalah contoh faker untuk pengisisan user sesuai wilayah Indonesia. :id: Faker ini membuat 10 data dummy secara otomatis.
 ----
 * Nama yang dihasilkan faker ini akan sesuai dengan gender. (ex: (Siti = Wanita) + (Joko  = Pria))
-* Email yang dihasilkan akan mengambil kata (objek) pertama dari nama lengkap + domain yang dihasilkan.
-* Avatar yang dihasilkan sesuai dengan gender nama 
+* Email yang dihasilkan akan mengambil kata (objek) pertama dari nama lengkap + domain yang divariabelkan.
+* Avatar yang dihasilkan sesuai dengan gender nama
+* Password yang dihasilkan akan terenkripsi dengan bcrypt
