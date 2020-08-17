@@ -5,4 +5,4 @@
 * Nama yang dihasilkan faker ini akan sesuai dengan gender. (ex: (Siti = Wanita) + (Joko  = Pria))
 * Email yang dihasilkan akan mengambil kata (objek) pertama dari nama lengkap + domain yang divariabelkan.
 * Avatar yang dihasilkan sesuai dengan gender nama
-* Password yang dihasilkan akan terenkripsi dengan bcrypt
+* Password yang dihasilkan akan terenkripsi dengan bcrypt dan dicustomisasi
