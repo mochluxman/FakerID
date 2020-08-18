@@ -16,10 +16,10 @@ class StudentSeeder extends Seeder
         $faker  = Faker::create('id_ID');
         $jk = array_random(['Pria','Wanita']);
 
-        $class = $faker->randomElement(['1', '2', '3']);
-        $vocation = $faker->randomElement(['1', '2','3','4','5']);
-        $status = $faker->randomElement(['Guru', 'Siswa']);
-        $gender = $faker->randomElement(['male', 'female']);
+        $class      = $faker->randomElement(['1', '2', '3']);
+        $vocation   = $faker->randomElement(['1', '2','3','4','5']);
+        $status     = $faker->randomElement(['Guru', 'Siswa']);
+        $gender     = $faker->randomElement(['male', 'female']);
 
     	for($i = 1; $i <= 10; $i++){
             $name  = $faker->name($gender);
@@ -27,9 +27,8 @@ class StudentSeeder extends Seeder
             $fname = explode(' ',$name);
             $sub_name = array_shift($fname);
             $value = strtolower($sub_name);
-            $domain = "mail.com";
+            $domain = "mailcustom.com";
             $email = $value.'@'.$domain;
-
     		User::insert([
     			'name' => $name,
     			'gender' => $jk,
@@ -38,7 +37,7 @@ class StudentSeeder extends Seeder
                 'class_id' => $class,
                 'vocation_id' => $vocation,
                 'email' =>  $email,
-                'password' => bcrypt('password')
+                'password' => bcrypt('customPasswordHere')
             ]);
             
     	}
